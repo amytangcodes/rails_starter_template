@@ -14,7 +14,11 @@
       </ul>
 
       <ul class="navbar-nav mb-2 mb-lg-0">
-        links go here
+        <% if user_signed_in? %>
+          signed in
+        <% else %>
+          signed out
+        <% end %>
       </ul>
     </div>
   </div>
